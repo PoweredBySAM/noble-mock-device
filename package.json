@@ -1,0 +1,27 @@
+{
+  "name": "noble-mock-device",
+  "version": "0.0.1",
+  "description": "Noble Mock Device",
+  "main": "./lib/device.js",
+  "scripts": {
+    "clean": "rm -rf lib/",
+    "prepublish": "npm run clean && npm run build",
+    "build": "./node_modules/babel/bin/babel.js src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PoweredBySAM/noble-mock-device.git"
+  },
+  "author": "Sam Labs <tech@samlabs.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PoweredBySAM/noble-mock-device/issues"
+  },
+  "homepage": "https://github.com/PoweredBySAM/noble-mock-device#readme",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "lodash": "^3.10.1",
+    "lodash-deep": "^1.6.0",
+    "node-ipc": "^2.0.0"
+  }
+}
