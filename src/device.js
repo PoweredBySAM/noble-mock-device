@@ -1,8 +1,9 @@
 import { EventEmitter } from 'events'
 import ipc from 'node-ipc'
 
-ipc.config.id = 'device-client'
+ipc.config.id = 'device-client-' + Math.random()
 ipc.config.retry = 1500
+ipc.config.silent = true
 
 export const createDevice = (namespace, deviceType) => {
   const device = new Device(namespace, deviceType)
@@ -18,20 +19,21 @@ class Device extends EventEmitter {
   connect() {
     ipc.connectTo('noblemock', () => {
       ipc.of.noblemock.on('connect', () => {
-        // ipc.log('connected to mock'.rainbow, ipc.config.delay)
         ipc.of.noblemock.emit('client:connected', this.params)
       })
       ipc.of.noblemock.on('disconnect', () => {
         // ipc.log('disconnected from mock'.notice)
       })
-      ipc.of.noblemock.on('message', (data) => {
-        // console.log("MESSAGE");
-        // ipc.log('message:'.debug, data)
+      ipc.of.noblemock.on('client:write', (data) => {
+        this.emit("write", data);
       })
     })
   }
   disconnect() {
     ipc.of.noblemock.emit('client:disconnected')
+  }
+  write(data) {
+    ipc.of.noblemock.emit('client:read', data)
   }
   turnOn() {
     if (!this.connection) {
