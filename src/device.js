@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events'
-import ipc from '../vendor/node-ipc'
+import ipc from 'node-ipc'
 
 ipc.config.id = 'device-client-' + Math.random()
 ipc.config.retry = 1500
