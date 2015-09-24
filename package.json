@@ -22,6 +22,6 @@
     "babel": "^5.8.23",
     "lodash": "^3.10.1",
     "lodash-deep": "^1.6.0",
-    "node-ipc": "./vendor/node-ipc"
+    "node-ipc": "file:vendor/node-ipc"
   }
 }
