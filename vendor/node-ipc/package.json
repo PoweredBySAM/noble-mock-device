@@ -1,0 +1,75 @@
+{
+  "name": "node-ipc",
+  "version": "2.0.0",
+  "description": "A nodejs module for local and remote Inter Process Communication (IPC), Neural Networking, and able to facilitate machine learning.",
+  "main": "node-ipc.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "event-pubsub": "~1.0.3",
+    "colors": "~0.6.2",
+    "node-cmd": "~1.0.1"
+  },
+  "devDependencies": {
+    "colors": "^0.6.2",
+    "event-pubsub": "^1.0.3",
+    "node-cmd": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "IPC",
+    "Neural Networking",
+    "Machine Learning",
+    "inter",
+    "process",
+    "communication",
+    "unix",
+    "TCP",
+    "UDP",
+    "domain",
+    "sockets",
+    "threaded",
+    "communication",
+    "multi",
+    "process",
+    "shared",
+    "memory"
+  ],
+  "author": {
+    "name": "Brandon Nozaki Miller"
+  },
+  "license": "DBAD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RIAEvangelist/node-ipc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RIAEvangelist/node-ipc/issues"
+  },
+  "homepage": "http://riaevangelist.github.io/node-ipc/",
+  "gitHead": "0659d08fc3cfc3696379e2ed56c75bdadc751a1f",
+  "_id": "node-ipc@2.0.0",
+  "_shasum": "e5896d0080bd967ded6f48bbdd6509d871d1cbcf",
+  "_from": "node-ipc@>=2.0.0 <3.0.0",
+  "_npmVersion": "2.7.4",
+  "_nodeVersion": "0.12.2",
+  "_npmUser": {
+    "name": "riaevangelist",
+    "email": "brandon@diginow.it"
+  },
+  "maintainers": [
+    {
+      "name": "riaevangelist",
+      "email": "brandon@1942design.com"
+    }
+  ],
+  "dist": {
+    "shasum": "e5896d0080bd967ded6f48bbdd6509d871d1cbcf",
+    "tarball": "http://registry.npmjs.org/node-ipc/-/node-ipc-2.0.0.tgz"
+  },
+  "_resolved": "https://registry.npmjs.org/node-ipc/-/node-ipc-2.0.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
