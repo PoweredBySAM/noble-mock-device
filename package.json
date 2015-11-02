@@ -5,7 +5,7 @@
   "main": "./lib/device.js",
   "scripts": {
     "clean": "rm -rf lib/",
-    "postinstall": "npm run clean && npm run build",
+    "prepublish": "npm run clean && npm run build",
     "build": "node_modules/.bin/babel src --out-dir lib"
   },
   "repository": {
