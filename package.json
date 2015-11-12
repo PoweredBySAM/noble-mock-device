@@ -4,7 +4,7 @@
   "description": "Noble Mock Device",
   "main": "./lib/device.js",
   "scripts": {
-    "postinstall": "npm run clean; npm run build",
+    "postinstall": "npm run clean && npm run build",
     "clean": "node_modules/.bin/rimraf lib/",
     "build": "node_modules/.bin/babel src --out-dir lib"
   },
